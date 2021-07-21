@@ -1,0 +1,453 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Vladimir';
+}
+@font-face {
+    font-family: 'Vladimir';
+    src: url(Cabin-VariableFont_wdth\,wght.ttf);
+}
+body {
+    background-image: url(cigla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*FACEBOOK I INSTAGRAM ICONS*/
+.instagram, .facebook {
+    margin: 0.2em 0em;
+}
+.fb-inst-icon i {
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0em 0.3em;
+}
+.instagram i:hover {
+    background-color: #e1306c;
+    color: white;
+}
+.facebook i:hover {
+    background-color: #4267B2;
+    color: white;
+}
+.fb-inst-icon {
+    display: flex;
+    margin: 0px 100px 0px 100px;
+}
+.fb-inst-icon i {
+    padding: 0.3em;
+    font-size: 1.5em;
+}
+
+/*HEADER*/
+.header {
+    display: flex;
+    margin: 0px 100px;
+    background-color: white;
+}
+.header div {
+    width: 25%;
+    text-align: center;
+    padding: 1.3em;
+}
+.naslov {
+    font-size: 1em;
+}
+.header-section {
+    display: flex;
+}
+.header-i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.header-i i {
+    color: lightseagreen;
+    font-size: 2.2em;
+}
+.header .header-info {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+
+/*SECTION*/
+.section {
+    display: flex;
+    margin: 0px 100px;
+}
+
+/*ASIDE AREA*/
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: lightseagreen;
+}
+aside a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.5em 0em 0.5em 0.3em;
+    margin: 0em 0.5em;
+    transition: margin-left 0.4s;
+}
+.aside-a a:hover {
+    margin-left: 1.5em;
+    cursor: pointer;
+    color: black;
+}
+aside div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0em 0.5em;
+}
+.aside-div {
+    border-bottom: 1px solid white;
+}
+.aside-i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-arrow-circle-right {
+    color: white;
+}
+.aside-info {
+    display: flex;
+    flex-direction: column;
+}
+.najprodavaniji, .najnoviji {
+    display: flex;
+    flex-direction: column;
+}
+.najprodavaniji-child, .najnoviji-child {
+    margin: 0.5em 0em;
+}
+.najprodavaniji h2 {
+    border-bottom: 2px solid white;
+    padding: 0.2em 0em; 
+    margin: 3em 0em 0.5em 0em;
+}
+.najnoviji h2 {
+    border-bottom: 2px solid white;
+    padding: 0.2em 0em; 
+    margin: 3em 0em 0.5em 0em;
+}
+.najprodavaniji-info, .najnoviji-info {
+    font-size: 1.3em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+}
+.najprodavaniji img, .najnoviji img {
+    width: 100px;
+}
+
+/*SEARCH POLJE*/
+.search {
+    margin: 0px 100px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    height: 3.5em;
+}
+.input-search {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 1em;
+}
+.search-icon i {
+    color: white;
+    font-size: 1.5em;
+    background-color: lightseagreen;
+    padding: 0.3em;
+}
+.search-icon i:hover {
+    color: black;
+}
+.input-search input[type=text] {
+    height: 70%;
+    width: 100%;
+    font-size: 1.3em;
+    border: none;
+}
+
+/*MAIN POLJE*/
+main {
+    width: 75%;
+    background-color: white;
+}
+.shop-item-parent {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    margin: 5% 0%;
+}
+
+.shop-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shop-item-image {
+    width: 15em;
+}
+.shop-item-title {
+    font-size: 1.2em;
+    margin: 0.5em 0em;
+}
+.shop-item-price {
+    font-size: 1.2em;
+}
+.shop-item-button {
+    padding: 0.5em;
+    border: none;
+    background-color: lightgray;
+    margin: 0.3em 0em;
+}
+
+/*CART-ITEMS*/
+.section-header i {
+    color: lightseagreen;
+    font-size: 1.4em;
+}
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-row {
+    display: flex;
+}
+.cart-item {
+    margin-left: 10px;
+    width: 45%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.cart-quantity {
+    width: 35%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-remove {
+    padding: 0.6em;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.btn-remove:hover {
+    color: lightseagreen;
+}
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid lightseagreen;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    color: white;
+    margin: 1em;
+    font-size: 1.5em;
+    background-color: lightseagreen;
+    border: none;
+    padding: 0.2em 0.5em;
+    float: right;
+}
+.btn-purchase:hover {
+    color: lightseagreen;
+    background-color: white;
+    border: 2px solid lightseagreen;
+    padding: 0.13em 0.4em;
+}
+
+/*FOOTER*/
+
+footer {
+    margin: 0px 100px 45px 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+}
+.footer-by span {
+    color: lightseagreen;
+}
+.footer-div {
+    display: flex;
+    justify-content: center;
+}
+.footer-div img {
+    width: 4rem;
+    padding: 0.6em 0.2em;
+}
+
+
+/*KONTAKT FORMA*/
+.contact-form {
+    margin-bottom: 2em;
+}
+.forma {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact-table {
+    width: 70%;
+    margin-top: 3em;
+}
+.contact-table th {
+    text-align: center;
+    font-size: 1.7rem;
+}
+.input-name, .input-email, 
+.input-subject, .textarea, .input-adress, .post-number, .placanje {
+    font-size: 1rem;
+    margin: 0.5rem 0rem;
+    padding: 0.6rem;
+    border: 2px solid lightgray;
+}
+.input-email {
+    float: right;
+}
+.input-subject, .textarea, .input-adress, .post-number, .placanje {
+    width: 100%;
+}
+.input-name, .input-email {
+    width: 98%;
+}
+.textarea::placeholder {
+    font-size: 1.2rem;
+}
+.submit {
+    font-size: 1rem;
+    padding: 0.7em;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    float: right;
+}
+.submit:hover {
+    color: lightseagreen;
+    background-color: white;
+    border: 2px solid lightseagreen;
+    padding: 0.6em;
+}
+.btn-nazad {
+    float: right;
+    padding: 0.7em;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 1em;
+    border: none;
+}
+.placanje {
+    color: rgb(110, 110, 110);
+}
+.placanje p {
+    margin-bottom: 1em;
+}
+.back-to-main {
+    text-decoration: none;
+    padding: 0.7em;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 1em;
+}
+.back-to-main:hover {
+    color: lightseagreen;
+    background-color: white;
+    border: 2px solid lightseagreen;
+}
+
+
+/*STYLE KOJI DODAJEM NA KONTAKT FORMU*/
+.hide {
+    display: none;
+}
+.red {
+    border: 2px solid red;
+}
+.red-color {
+    color: red;
+}
+
+
+
+/*STYLE ZA SLICICE NA FORMI*/
+.fa-times, .fa-check {
+    font-size: 1.3em;
+}
+.fa-handshake {
+    font-size: 1.6em;
+}
