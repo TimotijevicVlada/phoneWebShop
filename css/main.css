@@ -6,10 +6,10 @@
 }
 @font-face {
     font-family: 'Vladimir';
-    src: url(Cabin-VariableFont_wdth\,wght.ttf);
+    src: url(/fonts/Cabin-VariableFont_wdth\,wght.ttf);
 }
 body {
-    background-image: url(cigla.jpg);
+    background-image: url(/images/cigla.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
