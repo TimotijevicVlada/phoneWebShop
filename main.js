@@ -1,27 +1,12 @@
-//KOD ZA HOVEROVANJE PROIZVODA (KADA SE PREDJE MISEM DA SE POJAVI BOJA)
-const shopItem = document.getElementsByClassName("shop-item");
-for (let i = 0; i < shopItem.length; i++) {
-  shopItem[i].addEventListener("mouseover", function () {
-    let img = document.getElementsByClassName("shop-item")[i];
-    img.style.border = "1px solid lightseagreen";
-    let btn = document.getElementsByClassName("btn")[i];
-    btn.style.backgroundColor = "lightseagreen";
-    btn.style.color = "white";
-  });
+//Function for aside menu on phone screens
+const aside = document.querySelector(".aside_area");
+const bar = document.querySelector(".fa-bars");
+bar.onclick = () => {
+  aside.style.left = "0%";
 }
 
-//KOD ZA VRACANJE BOJE U PRETHODNO STANJE
-const shopItem1 = document.getElementsByClassName("shop-item");
-for (let i = 0; i < shopItem1.length; i++) {
-  shopItem1[i].addEventListener("mouseout", function () {
-    let img = document.getElementsByClassName("shop-item")[i];
-    img.style.border = "none";
-    let btn = document.getElementsByClassName("btn")[i];
-    btn.style.backgroundColor = "lightgray";
-    btn.style.color = "black";
-  });
-}
-/**************************************************************************/
+
+
 if (document.readyState == "loading") {
   //Sa ovime izbegavamo situaciju da nam pucaju liseneri a nije nam ucitan DOM
   document.addEventListener("DOMContentLoaded", ucitavanje);

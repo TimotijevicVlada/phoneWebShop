@@ -1,0 +1,54 @@
+@media screen and (max-width: 768px) {
+    .fa-bars {
+        color: red;
+    }
+    .header {
+        margin: 0px 0px;
+    }
+    .header div {
+        padding: 0.2em;
+    }
+    .header h2 {
+        font-size: 15px;
+    }
+    .naslov {
+        font-size: 0.8em;
+    }
+    .header-i i {
+        color: lightseagreen;
+        font-size: 1.5em;
+    }
+    .header-section {
+        flex-direction: column;
+    }
+
+    .aside_area {
+        position: fixed;
+        top: 50px;
+        left: -50%;
+        z-index: 10;
+        width: 50%;
+    }
+
+    .shop-item-parent {
+        flex-direction: column;
+        justify-content: center;
+        background-color: green;
+    }
+    .header-i i {
+        color: red;
+        font-size: 2.2em;
+    }
+    section {
+        margin: 0;
+        width: 100%;
+    }
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}

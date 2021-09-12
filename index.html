@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
@@ -19,6 +20,9 @@
       </div>
       <div class="facebook">
         <i class="fab fa-facebook-square"></i>
+      </div>
+      <div class="bars">
+        <i class="fas fa-bars"></i>
       </div>
     </div>
 
@@ -82,7 +86,7 @@
 
     <!--ASIDE AREA-->
     <section class="section">
-      <aside>
+      <aside class="aside_area">
         <div class="aside-div">
           <div class="aside-a">
             <a href="#">Iphone</a>
@@ -169,7 +173,7 @@
             <h2>Best seller</h2>
             <div class="najprodavaniji-child">
               <div>
-                <img src="images/case1.jpg" alt="case1">
+                <img src="images/case1.jpg" alt="case1" />
               </div>
               <div class="najprodavaniji-info">
                 <p>Iphone 12 pro</p>
@@ -178,7 +182,7 @@
             </div>
             <div class="najprodavaniji-child">
               <div>
-                <img src="images/case2.jpg" alt="case2">
+                <img src="images/case2.jpg" alt="case2" />
               </div>
               <div class="najprodavaniji-info">
                 <p>Iphone 12 pro max</p>
@@ -187,7 +191,7 @@
             </div>
             <div class="najprodavaniji-child">
               <div>
-                <img src="images/case3.jpg" alt="case3">
+                <img src="images/case3.jpg" alt="case3" />
               </div>
               <div class="najprodavaniji-info">
                 <p>Iphone 12 mini</p>
@@ -195,38 +199,37 @@
               </div>
             </div>
           </div>
-          
-            <div class="najnoviji">
-              <h2>New products</h2>
-              <div class="najnoviji-child">
-                <div>
-                  <img src="images/case8.jpg" alt="case8">
-                </div>
-                <div class="najnoviji-info">
-                  <p>Iphone 12 red</p>
-                  <p>RSD 1299.99</p>
-                </div>
+
+          <div class="najnoviji">
+            <h2>New products</h2>
+            <div class="najnoviji-child">
+              <div>
+                <img src="images/case8.jpg" alt="case8" />
               </div>
-              <div class="najnoviji-child">
-                <div>
-                  <img src="images/case5.jpg" alt="case5">
-                </div>
-                <div class="najnoviji-info">
-                  <p>Iphone 12 blue</p>
-                  <p>RSD 1299.99</p>
-                </div>
-              </div>
-              <div class="najnoviji-child">
-                <div>
-                  <img src="images/case7.jpg" alt="case7">
-                </div>
-                <div class="najnoviji-info">
-                  <p>Iphone 12 black</p>
-                  <p>RSD 1299.99</p>
-                </div>
+              <div class="najnoviji-info">
+                <p>Iphone 12 red</p>
+                <p>RSD 1299.99</p>
               </div>
             </div>
-          
+            <div class="najnoviji-child">
+              <div>
+                <img src="images/case5.jpg" alt="case5" />
+              </div>
+              <div class="najnoviji-info">
+                <p>Iphone 12 blue</p>
+                <p>RSD 1299.99</p>
+              </div>
+            </div>
+            <div class="najnoviji-child">
+              <div>
+                <img src="images/case7.jpg" alt="case7" />
+              </div>
+              <div class="najnoviji-info">
+                <p>Iphone 12 black</p>
+                <p>RSD 1299.99</p>
+              </div>
+            </div>
+          </div>
         </div>
       </aside>
 
@@ -314,7 +317,8 @@
 
         <!--KONTEJNER ZA UBACIVANJE PROIZVODA U KORPU-->
         <section class="container content-section">
-          <h2 class="section-header"><i class="fas fa-shopping-cart"></i>
+          <h2 class="section-header">
+            <i class="fas fa-shopping-cart"></i>
             Proizvodi u korpi
           </h2>
           <div class="cart-row">
@@ -322,7 +326,8 @@
             <span class="cart-price cart-header cart-column">Cena</span>
             <span class="cart-quantity cart-header cart-column">Količina</span>
           </div>
-          <div class="cart-items"></div>  <!--Div koji se popunjava iz JS-->
+          <div class="cart-items"></div>
+          <!--Div koji se popunjava iz JS-->
           <div class="cart-total">
             <strong class="cart-total-title">Ukupno</strong>
             <span id="cart-total-price" class="cart-total-price">RSD 0</span>
@@ -344,7 +349,10 @@
         <img src="images/visa card.png" alt="visa card" />
         <img src="images/banca-intesa-logo.jpg" alt="banka intesa" />
         <img src="images/verified by visa.png" alt="by visa" />
-        <img src="images/mastercard secure code.png" alt="mastercard secure code" />
+        <img
+          src="images/mastercard secure code.png"
+          alt="mastercard secure code"
+        />
         <img src="images/american express.jpg" alt="american express" />
         <img src="images/dina card.png" alt="dina card" />
       </div>

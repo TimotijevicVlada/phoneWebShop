@@ -85,6 +85,7 @@ aside {
     flex-direction: column;
     width: 25%;
     background-color: lightseagreen;
+    transition: all 0.3s ease;
 }
 aside a {
     text-decoration: none;
@@ -199,6 +200,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid transparent;
+}
+.shop-item:hover {
+    border: 1px solid lightseagreen;
+}
+.shop-item:hover .shop-item-button {
+    background-color: lightseagreen;
 }
 .shop-item-image {
     width: 15em;
@@ -213,7 +221,8 @@ main {
 .shop-item-button {
     padding: 0.5em;
     border: none;
-    background-color: lightgray;
+    background-color: white;
+    border: 1px solid lightseagreen;
     margin: 0.3em 0em;
 }
 
